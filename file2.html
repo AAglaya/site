@@ -5,9 +5,16 @@
 		<link rel="shortcut icon" href="fav.ico" type="image/x-icon">
 		<meta charset="utf-8" />
 		<style>
-			body    { background-color:  #FFFAF4; background-repeat: repeat-y;}
+			body    { background: url(ashurkova_menu.png) no-repeat; background-color:  #FFFAF4; background-repeat: repeat-y;}
 			H1      { font-family: Times New Roman; font-size: 450%; color: #405086;  margin-left: 40%; margin-top: -0.5%}
-			P.main {font-family: Times New Roman; font-size: 120%; color: #405086; margin-left: 3%;}
+			P.Menu_head {font-family: Times New Roman; font-size: 200%; color: #405086; margin-left: 4.5%; margin-top:  -123%; position: fixed;}
+			P.Menu_body1 {font-family: Times New Roman; font-size: 150%; color: #405086; margin-left: 1.5%; margin-top: -118%; position: fixed;}
+			P.Menu_body2 {font-family: Times New Roman; font-size: 150%; color: #405086; margin-left: 1.5%; margin-top: -113%; position: fixed;}
+			P.Menu_body3 {font-family: Times New Roman; font-size: 150%; color: #405086; margin-left: 1.5%; margin-top: -108%; position: fixed;}
+			P.Menu_body4 {font-family: Times New Roman; font-size: 150%; color: #405086; margin-left: 1.5%; margin-top: -103%; position: fixed;}
+			P.Menu_body5 {font-family: Times New Roman; font-size: 150%; color: #405086; margin-left: 1.5%; margin-top: -96.5%; position: fixed;}
+			P.main {font-family: Times New Roman; font-size: 120%; color: #405086; margin-left: 25%;}
+			IMG {margin-left: 25%;}
 		</style>
 	</head>
 	<body>
@@ -15,7 +22,7 @@
 		<p class="main"><b>Способы добавления стилей</b></p>
 		<p class="main">Для добавления стилей на веб-страницу существует несколько способов, которые различаются своими 
 		возможностями и назначением. Далее рассмотрим их подробнее.</p>
-		<p class="main"><b>Связанные стили</b></p>
+		<p class="main"><a name="1"></a><b>Связанные стили</b></p>
 		<p class="main">При использовании связанных стилей описание селекторов и их значений располагается в отдельном файле, 
 		как правило, с расширением css, а для связывания документа с этим файлом применяется тег &#60;link&#62;. Данный тег 
 		помещается в контейнер &#60;head&#62;, как показано ниже</p>
@@ -25,20 +32,25 @@
 		Заметьте, что таким образом можно подключать таблицу стилей, которая находится на другом сайте.</p>
 		<p class="main">Содержимое файла mysite.css подключаемого посредством тега &#60;link&#62; приведено ниже</p>
 		<img src ="pic2.gif">
-		<p class="main"><b>Глобальные стили</b></p>
+		<p class="main"><a name="2"></a><b>Глобальные стили</b></p>
 		<p class="main">При использовании глобальных стилей свойства CSS описываются в самом документе и располагаются в заголовке 
 		веб-страницы. По своей гибкости и возможностям этот способ добавления стиля уступает предыдущему, но также позволяет размещать 
 		все стили в одном месте. В данном случае, прямо в теле документа, с помощью контейнера&#60;style&#62;, как показано ниже</p>
 		<img src ="pic3.gif">
-		<p class="main"><b>Внутренние стили</b></p>
+		<p class="main"><a name="3"></a><b>Внутренние стили</b></p>
 		<p class="main">Внутренний или встроенный стиль является по существу расширением для одиночного тега используемого на текущей 
 		веб-странице. Для определения стиля используется параметр style, а его значением выступает набор стилевых правил:</p>
 		<img src ="pic4.gif">
-		<p class="main"><b>Сочетание разных методов подключения стилей</b></p>
+		<p class="main"><a name="4"></a><b>Сочетание разных методов подключения стилей</b></p>
 		<p class="main">Все описанные методы использования CSS могут применяться как самостоятельно, так и в сочетании друг с другом. 
 		В этом случае необходимо помнить об их иерархии. Первым всегда применяется внутренний стиль, затем глобальный стиль и в 
 		последнюю очередь связанный стиль. В примере ниже применяются сразу два метода добавления стиля в документ:</p>
 		<img src ="pic5.gif">
-		<b></b>
+		<p class="Menu_head">Меню</p>
+		<p class="Menu_body1"><a href="#1">Связанные стили</a></p>
+		<p class="Menu_body2"><a href="#2">Глобальные стили</a></p>
+		<p class="Menu_body3"><a href="#3">Внутренние стили</a></p>
+		<p class="Menu_body4"><a href="#4">Сочетание разных методов</br>подключения стилей</a></p>
+		<p class="Menu_body5"><a href="index.html">Назад</a></p>
 	</body>
 </html>
